@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="main.css">
+  <link href="style.css">
   <title>Document</title>
 </head>
 
@@ -76,15 +77,6 @@
       </a>
     </nav>
   </div>
-  <!--Container Main start-->
-  <div class="height-100 bg-light">
-    <h4>Main Components</h4>
-  </div>
-  <!--Container Main end-->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
 
 
 <a style="font-family: Arial;">
@@ -124,8 +116,11 @@
         </table>
 </a>
 </div>
-<scrift src="bs/js/bootstrap.bundle.min.js"></scrift>
-<link href="style.css">
+<script src="bs/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
     
 </body>
 </html>
