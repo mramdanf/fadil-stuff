@@ -26,7 +26,7 @@ CREATE TABLE `admin_zzy` (
   `nama` varchar(50) NOT NULL,
   `no_telp` varchar(50) NOT NULL,
   PRIMARY KEY (`id_admin`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of admin_zzy
@@ -48,7 +48,7 @@ CREATE TABLE `barang_zzy` (
   `stok` int NOT NULL,
   `gambar` varchar(50) NOT NULL,
   PRIMARY KEY (`id_barang`)
-) ENGINE=InnoDB AUTO_INCREMENT=878 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=878 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of barang_zzy
@@ -64,13 +64,13 @@ COMMIT;
 -- ----------------------------
 -- Table structure for kwitansi_zz
 -- ----------------------------
-DROP TABLE IF EXISTS `kwitansi_zz`;
-CREATE TABLE `kwitansi_zz` (
+DROP TABLE IF EXISTS `kwitansi_zzy`;
+CREATE TABLE `kwitansi_zzy` (
   `no_kw` int NOT NULL AUTO_INCREMENT,
   `id_peminjaman` int NOT NULL,
   `status` varchar(50) NOT NULL,
   PRIMARY KEY (`no_kw`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of kwitansi_zz
@@ -88,7 +88,7 @@ CREATE TABLE `pelanggan_zzy` (
   `no_telp` varchar(50) NOT NULL,
   `alamat` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pelanggan`)
-) ENGINE=InnoDB AUTO_INCREMENT=893 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=893 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of pelanggan_zzy
@@ -109,9 +109,9 @@ CREATE TABLE `peminjaman_zzy` (
   `tgl_pinjam` date NOT NULL,
   `tgl_pengembalian` date NOT NULL,
   `jumlah` int NOT NULL,
-  `status` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `status` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
   PRIMARY KEY (`id_peminjaman`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of peminjaman_zzy
@@ -131,7 +131,7 @@ CREATE TABLE `user` (
   `level` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of user
