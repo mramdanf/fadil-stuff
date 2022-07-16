@@ -14,8 +14,8 @@ $lihat = mysqli_fetch_array($hasil);
             <div class="card" style="width : 18 rem;">
             <img src = "<?php echo $lihat['gambar']; ?> " class ="card-img-top">
             <div class = "card-body">
-                <h2 class="card-title"><?php echo $lihat['Nama'];?></h2>
-                <p class="card-title"><?php echo $lihat['Email'];?></p>
+                <h2 class="card-title"><?php echo $lihat['id'];?></h2>
+                <p class="card-title"><?php echo $lihat['jumlah'];?></p>
 
 <a href = "#" class= "btn btn-primary">Go somewhere</a>
 </div>

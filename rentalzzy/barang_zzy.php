@@ -112,6 +112,9 @@ welcome, <?php echo $_SESSION["username"]," sebagai " , $_SESSION["level"];?>
                             <a href ="edit-barang.php?kode=<?php echo $lihat['id_barang'] ?>" class = "btn btn-primary btn-sm">edit</a>
                             <a href="delet-barang.php?kode=<?php echo $lihat['id_barang'] ?>" class = "btn btn-danger btn-sm">delete</a>
                         <?php } ?>
+                        <?php if ($_SESSION['level'] == 'pelanggan') { ?>
+                            <a href = "checkout.php?kode=<?php echo $lihat['id_barang'] ?>" class = "btn btn-light btn-sm">checkout</a>
+                        <?php } ?>
                         </td>
                 <?php
                         echo "</tr>";

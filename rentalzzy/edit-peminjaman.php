@@ -9,13 +9,13 @@ $hasil = mysqli_fetch_array($data);
 <head>
     <link href ="bs/css/bootstarp.min.css "rel="stylesheet">
     <script src="https://kit.fontawesome.com/8d855ed8a0.js" crossorigin="anonymous"></script>
-    <title>edit data barang</title>
+    <title>edit data peminjaman</title>
 </head>
 <body>
     <div class="container">
         <h1 align='center'>edit data peminjaman</h1>
         <hr>
-        <form method="POST" action = "edit-proses-peminjaman.php" enctype="multipart/form-data">
+        <form method="POST" action = "edit-peminjaman-proses.php" enctype="multipart/form-data">
                         <pre>
                             ID<input type="text" name="id_peminjaman" value="<?php echo $hasil['id_peminjaman']?>"><br>
                             ID BARANG<input type="text" name = "id_barang" value="<?php echo $hasil['id_barang']?>"><br>

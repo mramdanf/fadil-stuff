@@ -61,6 +61,7 @@
                         <td>
                 <?php if ($_SESSION['level'] == 'admin'){ ?>
                         <a href = "edit-peminjaman.php?kode=<?php echo $lihat['id_peminjaman'] ?>" class = "btn btn-primary btn-sm">edit</a>
+                        <a href = "delet-peminjaman.php?kode=<?php echo $lihat['id_peminjaman'] ?>" class = "btn btn-danger btn-sm">hapus</a>
                 <?php } ?>
                         </td>
                 <?php 
