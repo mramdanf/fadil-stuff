@@ -113,7 +113,7 @@ welcome, <?php echo $_SESSION["username"]," sebagai " , $_SESSION["level"];?>
                             <a href="delet-barang.php?kode=<?php echo $lihat['id_barang'] ?>" class = "btn btn-danger btn-sm">delete</a>
                         <?php } ?>
                         <?php if ($_SESSION['level'] == 'pelanggan') { ?>
-                            <a href = "checkout.php?kode=<?php echo $lihat['id_barang'] ?>" class = "btn btn-light btn-sm">checkout</a>
+                            <a href = "checkout.php?kode=<?php echo $lihat['id_barang'] ?>"><i class='bx bx-cart'></i></a>
                         <?php } ?>
                         </td>
                 <?php
@@ -127,7 +127,6 @@ welcome, <?php echo $_SESSION["username"]," sebagai " , $_SESSION["level"];?>
        <?php } ?>
 </a>
 </div>
-<script src="bs/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
